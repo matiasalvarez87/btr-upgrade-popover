@@ -1,0 +1,30 @@
+.premium-popover {
+    white-space: normal;
+    display: block;
+    overflow: visible;
+}
+
+.premium-popover h3 {
+	text-align: center;
+}
+
+.premium-popover p {
+	text-align: center;
+}
+
+.premium-popover [data-btr-icon].favicon {
+	color: #09C;
+	margin-right: 5px;
+}
+
+[class*="icon-premium-"] {
+	width: 64px;
+	height: 64px;
+	display: block;
+	margin: 10px auto;
+	background: url("http://btrmisc.s3.amazonaws.com/images/premium-icons-sprite.png") no-repeat;
+}
+
+.icon-premium-primetime {
+	background-position: -256px 0;
+}

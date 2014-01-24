@@ -1,0 +1,25 @@
+{
+  "name": "btr-upgrade-popover",
+  "version": "1.0.0",
+  "description": "btr-upgrade-popover ===================",
+  "main": "dist/btr-upgrade-popover.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlogTalkRadio/btr-upgrade-popover"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlogTalkRadio/btr-upgrade-popover/issues"
+  },
+  "homepage": "https://github.com/BlogTalkRadio/btr-upgrade-popover",
+  "devDependencies": {
+    "grunt-contrib-htmlmin": "~0.1.3",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-string-replace": "~0.2.7"
+  }
+}

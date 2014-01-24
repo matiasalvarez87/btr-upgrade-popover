@@ -1,0 +1,17 @@
+{
+  "name": "btr-upgrade-popover",
+  "version": "1.0.0",
+  "homepage": "https://github.com/BlogTalkRadio/btr-upgrade-popover",
+  "authors": [
+    "matiasalvarez87 <matiasalvarez87@gmail.com>"
+  ],
+  "main": "dist/btr-upgrade-popover.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/.*",
+    "dist/partials"
+  ]
+}
