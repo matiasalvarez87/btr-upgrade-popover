@@ -32,7 +32,7 @@
             }
 
             // Sets the specified id or an auto-generated one
-            this.options.content = this.options.content.replace('{{id}}', id)
+            this.options.template = this.options.template.replace('{{id}}', id)
 
             // Sets the link value into the content
             this.options.content = this.options.content.replace('{{link}}', this.options.link)
