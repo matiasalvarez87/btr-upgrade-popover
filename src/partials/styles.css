@@ -2,6 +2,7 @@
     white-space: normal;
     display: block;
     overflow: visible;
+    width: 280px;
 }
 
 .premium-popover h3 {

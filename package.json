@@ -1,6 +1,6 @@
 {
   "name": "btr-upgrade-popover",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "btr-upgrade-popover ===================",
   "main": "dist/btr-upgrade-popover.js",
   "scripts": {

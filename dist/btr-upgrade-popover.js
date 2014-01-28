@@ -50,7 +50,7 @@
     $.fn.btrUpgradePopover.defaults = $.extend({}, $.fn.popover.defaults, {
         html: true
       , placement: 'right'
-      , template: '<div class="popover premium-popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div><style type="text/css">.premium-popover{white-space:normal;display:block;overflow:visible}.premium-popover h3,.premium-popover p{text-align:center}.premium-popover [data-btr-icon].favicon{color:#09C;margin-right:5px}[class*=icon-premium-]{width:64px;height:64px;display:block;margin:10px auto;background:url(http://btrmisc.s3.amazonaws.com/images/premium-icons-sprite.png) no-repeat}.icon-premium-primetime{background-position:-256px 0}</style></div>'
+      , template: '<div class="popover premium-popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div><style type="text/css">.premium-popover{white-space:normal;display:block;overflow:visible;width:280px}.premium-popover h3,.premium-popover p{text-align:center}.premium-popover [data-btr-icon].favicon{color:#09C;margin-right:5px}[class*=icon-premium-]{width:64px;height:64px;display:block;margin:10px auto;background:url(http://btrmisc.s3.amazonaws.com/images/premium-icons-sprite.png) no-repeat}.icon-premium-primetime{background-position:-256px 0}</style></div>'
       , title: '<span data-btr-icon="v" class="favicon"></span>Premium Feature'
       , content: '<p>Expose your show to a bigger audience with Prime Time Scheduling. Go live during our busiest time of the day when the most people are listening.</p><p align="center"><span class="icon-premium-primetime"></span></p><p><a href="{{link}}" class="btn btn-warning btn-large input-block-level">Go Premium Now</a></p>'
     })
