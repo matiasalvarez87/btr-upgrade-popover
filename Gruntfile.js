@@ -29,7 +29,8 @@ module.exports = function (grunt) {
                 files: {
                     'dist/partials/template.html': 'src/partials/template.html',
                     'dist/partials/title.html': 'src/partials/title.html',
-                    'dist/partials/content.html': 'src/partials/content.html'
+                    'dist/partials/content.html': 'src/partials/content.html',
+                    'dist/partials/content-import.html': 'src/partials/content-import.html'
                 }
             }
         },
@@ -60,6 +61,9 @@ module.exports = function (grunt) {
                         }, {
                             pattern: '<!--CONTENT-->',
                             replacement: '<%= grunt.file.read(\'dist/partials/content.html\') %>'
+                        }, {
+                            pattern: '<!--CONTENT_IMPORT-->',
+                            replacement: '<%= grunt.file.read(\'dist/partials/content-import.html\') %>'
                         }
                     ]
                 },

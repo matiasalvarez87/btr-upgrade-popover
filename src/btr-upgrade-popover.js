@@ -21,6 +21,10 @@
     
         setContent: function () {
 
+            if (this.options.upgradeType) {
+              this.options.content = this.options.contentImport
+            }
+
             // Sets the link value into the content
             this.options.content = this.options.content.replace('{{link}}', this.options.link)
 
@@ -53,6 +57,7 @@
       , template: '<!--TEMPLATE-->'
       , title: '<!--TITLE-->'
       , content: '<!--CONTENT-->'
+      , contentImport: '<!--CONTENT_IMPORT-->'
     })
 
 

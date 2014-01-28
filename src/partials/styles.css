@@ -29,3 +29,19 @@
 .icon-premium-primetime {
 	background-position: -256px 0;
 }
+
+/* Import content styles */
+.premium-popover .row-fluid [data-btr-icon] {
+    display: block;
+    margin: 0 auto;
+    font-size: 32px;
+    text-align: center;
+}
+
+.premium-popover [data-btr-icon].upload {
+    color: #BDC331;
+}
+
+.premium-popover [data-btr-icon].rss {
+    color: #F60;
+}

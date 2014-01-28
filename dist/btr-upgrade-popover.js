@@ -21,6 +21,10 @@
     
         setContent: function () {
 
+            if (this.options.upgradeType) {
+              this.options.content = this.options.contentImport
+            }
+
             // Sets the link value into the content
             this.options.content = this.options.content.replace('{{link}}', this.options.link)
 
@@ -50,9 +54,10 @@
     $.fn.btrUpgradePopover.defaults = $.extend({}, $.fn.popover.defaults, {
         html: true
       , placement: 'right'
-      , template: '<div class="popover premium-popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div><style type="text/css">.premium-popover{white-space:normal;display:block;overflow:visible;width:280px}.premium-popover h3,.premium-popover p{text-align:center}.premium-popover [data-btr-icon].favicon{color:#09C;margin-right:5px}[class*=icon-premium-]{width:64px;height:64px;display:block;margin:10px auto;background:url(http://btrmisc.s3.amazonaws.com/images/premium-icons-sprite.png) no-repeat}.icon-premium-primetime{background-position:-256px 0}</style></div>'
+      , template: '<div class="popover premium-popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div><style type="text/css">.premium-popover{white-space:normal;display:block;overflow:visible;width:280px}.premium-popover h3,.premium-popover p{text-align:center}.premium-popover [data-btr-icon].favicon{color:#09C;margin-right:5px}[class*=icon-premium-]{width:64px;height:64px;display:block;margin:10px auto;background:url(http://btrmisc.s3.amazonaws.com/images/premium-icons-sprite.png) no-repeat}.icon-premium-primetime{background-position:-256px 0}.premium-popover .row-fluid [data-btr-icon]{display:block;margin:0 auto;font-size:32px;text-align:center}.premium-popover [data-btr-icon].upload{color:#BDC331}.premium-popover [data-btr-icon].rss{color:#F60}</style></div>'
       , title: '<span data-btr-icon="v" class="favicon"></span>Premium Feature'
       , content: '<p>Expose your show to a bigger audience with Prime Time Scheduling. Go live during our busiest time of the day when the most people are listening.</p><p align="center"><span class="icon-premium-primetime"></span></p><p><a href="{{link}}" class="btn btn-warning btn-large input-block-level">Go Premium Now</a></p>'
+      , contentImport: '<p>Importing enables you to edit &amp; replace your shows, copy information from your blog or publish pre-recorded episodes.</p><div class="row-fluid"><div class="span5 offset1"><span data-btr-icon="H" class="upload"></span><p>Upload Episodes</p></div><div class="span5 offset1"><span data-btr-icon="Q" class="rss"></span><p>Import by RSS</p></div></div><p><a href="{{link}}" class="btn btn-warning btn-large input-block-level">Go Premium Now</a></p>'
     })
 
 
