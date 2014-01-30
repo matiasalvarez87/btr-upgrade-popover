@@ -5,6 +5,10 @@
     width: 280px;
 }
 
+.premium-popover .close {
+	margin-top: 7px;
+}
+
 .premium-popover h3 {
 	text-align: center;
 }
