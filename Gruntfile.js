@@ -29,8 +29,9 @@ module.exports = function (grunt) {
                 files: {
                     'dist/partials/template.html': 'src/partials/template.html',
                     'dist/partials/title.html': 'src/partials/title.html',
-                    'dist/partials/content.html': 'src/partials/content.html',
-                    'dist/partials/content-import.html': 'src/partials/content-import.html'
+                    'dist/partials/content-duration.html': 'src/partials/content-duration.html',
+                    'dist/partials/content-import.html': 'src/partials/content-import.html',
+                    'dist/partials/content-primetime.html': 'src/partials/content-primetime.html'
                 }
             }
         },
@@ -59,11 +60,14 @@ module.exports = function (grunt) {
                             pattern: '<!--TITLE-->',
                             replacement: '<%= grunt.file.read(\'dist/partials/title.html\') %>'
                         }, {
-                            pattern: '<!--CONTENT-->',
-                            replacement: '<%= grunt.file.read(\'dist/partials/content.html\') %>'
+                            pattern: '<!--CONTENT_DURATION-->',
+                            replacement: '<%= grunt.file.read(\'dist/partials/content-duration.html\') %>'
                         }, {
                             pattern: '<!--CONTENT_IMPORT-->',
                             replacement: '<%= grunt.file.read(\'dist/partials/content-import.html\') %>'
+                        }, {
+                            pattern: '<!--CONTENT_PRIMETIME-->',
+                            replacement: '<%= grunt.file.read(\'dist/partials/content-primetime.html\') %>'
                         }
                     ]
                 },

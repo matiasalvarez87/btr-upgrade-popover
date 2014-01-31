@@ -21,8 +21,10 @@
     
         setContent: function () {
 
-            if (this.options.upgradeType) {
-              this.options.content = this.options.contentImport
+            if (!this.options.upgradeType) {
+              throw new Error('You have to specify the upgradeType option')
+            } else {
+              this.options.content = this.options.contentTypes[this.options.upgradeType]
             }
 
             // Sets the link value into the content
@@ -56,8 +58,11 @@
       , placement: 'right'
       , template: '<!--TEMPLATE-->'
       , title: '<!--TITLE-->'
-      , content: '<!--CONTENT-->'
-      , contentImport: '<!--CONTENT_IMPORT-->'
+      , contentTypes: {
+          duration: '<!--CONTENT_DURATION-->',
+          import: '<!--CONTENT_IMPORT-->',
+          primetime: '<!--CONTENT_PRIMETIME-->'
+        }
     })
 
 
