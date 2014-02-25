@@ -29,6 +29,7 @@
 
             // Sets the link value into the content
             this.options.content = this.options.content.replace('{{link}}', this.options.link)
+            this.options.content = this.options.content.replace('{{linkLabel}}', this.options.linkLabel)
 
             $.fn.popover.Constructor.prototype.setContent.call(this)
         }
